@@ -1,0 +1,6 @@
+/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles/CliPomodoro.dir
+/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles/edit_cache.dir
+/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles/rebuild_cache.dir
+/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/Cli-Kit/CMakeFiles/CliKit.dir
+/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/Cli-Kit/CMakeFiles/edit_cache.dir
+/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/Cli-Kit/CMakeFiles/rebuild_cache.dir
