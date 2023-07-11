@@ -1,15 +1,16 @@
 #pragma once
 
-struct Time {
-    int hours;
-    int minutes;
-    int seconds;
-};
+#include "my_time.h"
+
+#include <string>
+
+using namespace std;
 
 class Timer {
 public:
-    int total_time = 0;
+    int time_passed = 0;
     int target_time;
+    bool paused = false;
 
     Timer() = default;
     
@@ -18,16 +19,13 @@ public:
     }
 
     Timer(int hours, int minutes, int seconds){
-        this->target_time = timeToSeconds(Time{hours, minutes, seconds});
+        this->target_time = Time::timeToSeconds(Time{hours, minutes, seconds});
     };
 
     void start();
     void pause();
+    void proceed();
     void restart();
     void reset();
-    void refresh();
-
-private:
-    static int timeToSeconds(Time time);
-    static Time secondsToTime(int seconds);   
+    string to_string();
 };

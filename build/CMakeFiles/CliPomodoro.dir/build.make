@@ -97,20 +97,68 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/timer/timer.cpp -o CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.s
 
+CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o: CMakeFiles/CliPomodoro.dir/flags.make
+CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o: ../src/timer/time.cpp
+CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o: CMakeFiles/CliPomodoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o -MF CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o.d -o CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o -c /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/timer/time.cpp
+
+CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/timer/time.cpp > CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.i
+
+CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/timer/time.cpp -o CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.s
+
+CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o: CMakeFiles/CliPomodoro.dir/flags.make
+CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o: ../src/menu/menu.cpp
+CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o: CMakeFiles/CliPomodoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o -MF CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o.d -o CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o -c /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/menu/menu.cpp
+
+CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/menu/menu.cpp > CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.i
+
+CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/menu/menu.cpp -o CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.s
+
+CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o: CMakeFiles/CliPomodoro.dir/flags.make
+CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o: ../src/pomodoro/pomodoro.cpp
+CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o: CMakeFiles/CliPomodoro.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o -MF CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o.d -o CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o -c /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/pomodoro/pomodoro.cpp
+
+CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/pomodoro/pomodoro.cpp > CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.i
+
+CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/src/pomodoro/pomodoro.cpp -o CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.s
+
 # Object files for target CliPomodoro
 CliPomodoro_OBJECTS = \
 "CMakeFiles/CliPomodoro.dir/src/main.cpp.o" \
-"CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o"
+"CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o" \
+"CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o" \
+"CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o" \
+"CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o"
 
 # External object files for target CliPomodoro
 CliPomodoro_EXTERNAL_OBJECTS =
 
 CliPomodoro: CMakeFiles/CliPomodoro.dir/src/main.cpp.o
 CliPomodoro: CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o
+CliPomodoro: CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o
+CliPomodoro: CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o
+CliPomodoro: CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o
 CliPomodoro: CMakeFiles/CliPomodoro.dir/build.make
 CliPomodoro: Cli-Kit/libCliKit.a
 CliPomodoro: CMakeFiles/CliPomodoro.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable CliPomodoro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable CliPomodoro"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CliPomodoro.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

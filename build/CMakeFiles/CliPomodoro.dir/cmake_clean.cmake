@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CliPomodoro.dir/src/main.cpp.o"
   "CMakeFiles/CliPomodoro.dir/src/main.cpp.o.d"
+  "CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o"
+  "CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o.d"
+  "CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o"
+  "CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o.d"
+  "CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o"
+  "CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o.d"
   "CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o"
   "CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o.d"
   "CliPomodoro"

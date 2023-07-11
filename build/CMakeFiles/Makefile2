@@ -98,12 +98,12 @@ Cli-Kit/clean: Cli-Kit/CMakeFiles/CliKit.dir/clean
 CMakeFiles/CliPomodoro.dir/all: Cli-Kit/CMakeFiles/CliKit.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles --progress-num=6,7,8 "Built target CliPomodoro"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles --progress-num=6,7,8,9,10,11 "Built target CliPomodoro"
 .PHONY : CMakeFiles/CliPomodoro.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CliPomodoro.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CliPomodoro.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/konstantinos/Documents/Github_Repos/Cli_Pomodoro/build/CMakeFiles 0
 .PHONY : CMakeFiles/CliPomodoro.dir/rule

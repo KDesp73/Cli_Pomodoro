@@ -166,6 +166,78 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/menu/menu.o: src/menu/menu.cpp.o
+.PHONY : src/menu/menu.o
+
+# target to build an object file
+src/menu/menu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o
+.PHONY : src/menu/menu.cpp.o
+
+src/menu/menu.i: src/menu/menu.cpp.i
+.PHONY : src/menu/menu.i
+
+# target to preprocess a source file
+src/menu/menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.i
+.PHONY : src/menu/menu.cpp.i
+
+src/menu/menu.s: src/menu/menu.cpp.s
+.PHONY : src/menu/menu.s
+
+# target to generate assembly for a file
+src/menu/menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.s
+.PHONY : src/menu/menu.cpp.s
+
+src/pomodoro/pomodoro.o: src/pomodoro/pomodoro.cpp.o
+.PHONY : src/pomodoro/pomodoro.o
+
+# target to build an object file
+src/pomodoro/pomodoro.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o
+.PHONY : src/pomodoro/pomodoro.cpp.o
+
+src/pomodoro/pomodoro.i: src/pomodoro/pomodoro.cpp.i
+.PHONY : src/pomodoro/pomodoro.i
+
+# target to preprocess a source file
+src/pomodoro/pomodoro.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.i
+.PHONY : src/pomodoro/pomodoro.cpp.i
+
+src/pomodoro/pomodoro.s: src/pomodoro/pomodoro.cpp.s
+.PHONY : src/pomodoro/pomodoro.s
+
+# target to generate assembly for a file
+src/pomodoro/pomodoro.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.s
+.PHONY : src/pomodoro/pomodoro.cpp.s
+
+src/timer/time.o: src/timer/time.cpp.o
+.PHONY : src/timer/time.o
+
+# target to build an object file
+src/timer/time.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o
+.PHONY : src/timer/time.cpp.o
+
+src/timer/time.i: src/timer/time.cpp.i
+.PHONY : src/timer/time.i
+
+# target to preprocess a source file
+src/timer/time.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.i
+.PHONY : src/timer/time.cpp.i
+
+src/timer/time.s: src/timer/time.cpp.s
+.PHONY : src/timer/time.s
+
+# target to generate assembly for a file
+src/timer/time.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CliPomodoro.dir/build.make CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.s
+.PHONY : src/timer/time.cpp.s
+
 src/timer/timer.o: src/timer/timer.cpp.o
 .PHONY : src/timer/timer.o
 
@@ -203,6 +275,15 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/menu/menu.o"
+	@echo "... src/menu/menu.i"
+	@echo "... src/menu/menu.s"
+	@echo "... src/pomodoro/pomodoro.o"
+	@echo "... src/pomodoro/pomodoro.i"
+	@echo "... src/pomodoro/pomodoro.s"
+	@echo "... src/timer/time.o"
+	@echo "... src/timer/time.i"
+	@echo "... src/timer/time.s"
 	@echo "... src/timer/timer.o"
 	@echo "... src/timer/timer.i"
 	@echo "... src/timer/timer.s"

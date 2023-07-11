@@ -12,11 +12,19 @@ set(SOURCES
     src/main.cpp
     
     src/timer/timer.cpp
+    src/timer/time.cpp
+    
+    src/menu/menu.cpp
+
+    src/pomodoro/pomodoro.cpp
 )
 
 # Add your header files
 set(HEADERS
     include/timer.h
+    include/my_time.h
+    include/menu.h
+    include/pomodoro.h
 )
 
 set(TESTS

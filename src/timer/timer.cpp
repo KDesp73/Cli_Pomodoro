@@ -1,6 +1,8 @@
 #include "timer.h"
+#include "my_time.h"
 
 #include <iostream>
+#include <string>
 #include <cstdio>
 #include <ctime>
 
@@ -15,13 +17,18 @@ void Timer::start(){
         clock_t now = clock();
     
         while(clock() - now < delay);
-
-        total_time++;
+        
+        if(!paused)
+            time_passed++;
     }
 }
 
 void Timer::pause(){
+    paused = true;
+}
 
+void Timer::proceed(){
+    paused = false;
 }
 
 void Timer::restart(){
@@ -30,30 +37,12 @@ void Timer::restart(){
 }
 
 void Timer::reset(){
-    total_time = 0;
-    hours = 0;
-    minutes = 0;
-    seconds = 0;
+    time_passed = 0;
 }
 
-void Timer::refresh(){
+string Timer::to_string(){
+    Time time = Time::secondsToTime(time_passed);
 
+    return time.to_string();
 }
 
-Time Timer::secondsToTime(int seconds){
-   int hours, minutes;
-
-   minutes = seconds / 60;
-   hours = minutes / 60;
-   seconds = seconds % 60;
-
-   return Time{hours, minutes, seconds};
-}
-
-int Timer::timeToSeconds(Time time){
-    int hours = time.hours;
-    int minutes = time.minutes;
-    int seconds = time.seconds;
-
-    return seconds + (minutes * 60) + (hours * 60 * 60);
-}
