@@ -108,11 +108,7 @@ void Pomodoro::start(){
 
     Text::clearScreen();
     while(!end){
-        //if(getCharacter() == 'e' || getCharacter() == 'E') return;
-
         while(timer.time_passed <= timer.target_time){
-            //if(getCharacter() == 'e' || getCharacter() == 'E') return;    
-
             // Rendering
             cout << Text::red << "Task: " << Text::normal  << task << endl;
             cout << timer.to_string() << endl;
@@ -158,8 +154,8 @@ void Pomodoro::start(){
 
 
 int main(int argc, char **argv){
-    work_interval = {0, 0, 10};
-    break_interval = {0, 0, 5};
+    work_interval = {0, 25, 0};
+    break_interval = {0, 5, 0};
     
     PomodoroMenu::homeMenu();
 
