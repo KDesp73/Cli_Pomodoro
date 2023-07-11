@@ -44,6 +44,19 @@ int Time::timeToSeconds(Time time){
     return seconds + (minutes * 60) + (hours * 60 * 60);
 }
 
+std::vector<int> Time::timeToDigits(Time time){
+    vector<int> digits;
+
+    digits.push_back(time.hours / 10);
+    digits.push_back(time.hours % 10);
+    digits.push_back(time.minutes / 10);
+    digits.push_back(time.minutes % 10);
+    digits.push_back(time.seconds / 10);
+    digits.push_back(time.seconds % 10);
+
+    return digits;
+}
+
 string Time::to_string(){
     string hours_str = (std::to_string(hours).size() == 1) ? "0" + std::to_string(hours) : std::to_string(hours);
     string minutes_str = (std::to_string(minutes).size() == 1) ? "0" + std::to_string(minutes) : std::to_string(minutes);
@@ -107,15 +120,11 @@ int handleArrowKeys() {
     return -1;
 }
 
-Time Time::guiTimeInput(){
+Time Time::guiTimeInput(vector<int> digits){
     bool confirm = false;
     int selected = 0;
     
-    std::vector<int> digits = {
-        0, 0,
-        0, 0,
-        0, 0
-    };
+    if(digits.size() != 6) return Time {0, 0, 0}; 
        
 
     Text::clearScreen();

@@ -3,9 +3,11 @@
 
 CMakeFiles/CliPomodoro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/stdc-predef.h \
-  /usr/include/c++/11/iostream \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+  /usr/include/curses.h \
+  /usr/include/ncurses_dll.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/features.h \
   /usr/include/features-time64.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -14,6 +16,34 @@ CMakeFiles/CliPomodoro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/unctrl.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -22,20 +52,6 @@ CMakeFiles/CliPomodoro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/bits/memoryfwd.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/exception_ptr.h \
@@ -63,13 +79,6 @@ CMakeFiles/CliPomodoro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
   /usr/include/c++/11/cstdint \
-  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -142,12 +151,6 @@ CMakeFiles/CliPomodoro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/11/bits/std_abs.h \
   /usr/include/c++/11/cstdio \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -194,14 +197,37 @@ CMakeFiles/CliPomodoro.dir/src/main.cpp.o: ../src/main.cpp \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
-  ../Cli-Kit/cli_kit.h \
-  ../Cli-Kit/include/text.h \
-  ../Cli-Kit/include/menu.h \
+  /usr/include/c++/11/atomic \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
   /usr/include/c++/11/vector \
   /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
+  /usr/include/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
+  /usr/include/unistd.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/linux/close_range.h \
+  ../Cli-Kit/cli_kit.h \
+  ../Cli-Kit/include/text.h \
+  ../Cli-Kit/include/menu.h \
   ../Cli-Kit/include/animations.h \
   ../include/timer.h \
   ../include/my_time.h \
@@ -547,6 +573,11 @@ CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o: ../src/pomodoro/pomodoro
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   ../Cli-Kit/cli_kit.h \
   ../Cli-Kit/include/text.h \
   /usr/include/c++/11/iostream \
@@ -579,11 +610,6 @@ CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o: ../src/pomodoro/pomodoro
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
   ../Cli-Kit/include/menu.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   ../Cli-Kit/include/animations.h \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
@@ -751,6 +777,11 @@ CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o: ../src/timer/time.cpp \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   ../Cli-Kit/cli_kit.h \
   ../Cli-Kit/include/text.h \
   /usr/include/c++/11/iostream \
@@ -783,11 +814,6 @@ CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o: ../src/timer/time.cpp \
   /usr/include/c++/11/istream \
   /usr/include/c++/11/bits/istream.tcc \
   ../Cli-Kit/include/menu.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   ../Cli-Kit/include/animations.h \
   /usr/include/curses.h \
   /usr/include/ncurses_dll.h \
@@ -965,6 +991,11 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -997,6 +1028,10 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
   /usr/include/c++/11/ctime
 
 
+../src/pomodoro/pomodoro.cpp:
+
+../include/pomodoro.h:
+
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
@@ -1014,14 +1049,6 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h:
 
 /usr/include/termios.h:
-
-/usr/include/unctrl.h:
-
-/usr/include/ncurses_dll.h:
-
-../src/pomodoro/pomodoro.cpp:
-
-../include/pomodoro.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -1071,6 +1098,8 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/c++/11/bits/basic_ios.h:
 
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
 /usr/include/c++/11/bits/streambuf.tcc:
 
 /usr/include/c++/11/stdexcept:
@@ -1105,10 +1134,6 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/c++/11/cerrno:
 
-/usr/include/c++/11/thread:
-
-/usr/include/stdio.h:
-
 /usr/include/c++/11/chrono:
 
 /usr/include/c++/11/cstdio:
@@ -1131,35 +1156,15 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/stdlib.h:
 
-/usr/include/c++/11/bits/ostream.tcc:
+/usr/include/c++/11/bits/this_thread_sleep.h:
 
-/usr/include/c++/11/clocale:
+/usr/include/c++/11/bits/stl_construct.h:
 
-/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/11/bits/stream_iterator.h:
-
-/usr/include/ctype.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+/usr/include/c++/11/bits/alloc_traits.h:
 
 /usr/include/c++/11/initializer_list:
 
-/usr/include/c++/11/streambuf:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/c++/11/bits/functexcept.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/c++/11/bits/stl_iterator.h:
-
-/usr/include/c++/11/new:
+/usr/include/c++/11/bits/range_access.h:
 
 ../include/my_time.h:
 
@@ -1171,49 +1176,37 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
 
+/usr/include/c++/11/atomic:
+
 /usr/include/c++/11/bits/exception_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
-/usr/include/c++/11/bits/concept_check.h:
+/usr/include/c++/11/ext/string_conversions.h:
+
+/usr/include/c++/11/bits/exception_ptr.h:
 
 ../include/timer.h:
 
 /usr/include/stdint.h:
 
+/usr/include/c++/11/bits/concept_check.h:
+
 /usr/include/c++/11/bits/exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/c++/11/bits/range_access.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/c++/11/bits/nested_exception.h:
 
-/usr/include/c++/11/bits/stl_algobase.h:
+/usr/include/x86_64-linux-gnu/bits/termios.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+../src/main.cpp:
 
-/usr/include/c++/11/cwchar:
+../Cli-Kit/include/text.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/include/c++/11/iosfwd:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/include/c++/11/ctime:
 
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/11/iterator:
 
@@ -1229,83 +1222,21 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/linux/close_range.h:
-
-/usr/include/c++/11/debug/assertions.h:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/11/ios:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/11/bits/char_traits.h:
-
-../Cli-Kit/include/menu.h:
-
-/usr/include/c++/11/bits/allocator.h:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-../Cli-Kit/cli_kit.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/usr/include/features.h:
-
-/usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
-
-/usr/include/c++/11/ext/type_traits.h:
-
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
-../Cli-Kit/include/text.h:
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/c++/11/iosfwd:
+/usr/include/c++/11/bits/cxxabi_init_exception.h:
 
-/usr/include/c++/11/ctime:
+/usr/include/wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/time64.h:
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-../src/timer/time.cpp:
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
-/usr/include/c++/11/bits/stl_function.h:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/bits/termios.h:
-
-../src/main.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/c++/11/bits/memoryfwd.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/termios-struct.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -1315,9 +1246,83 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/c++/11/bits/exception_ptr.h:
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/include/c++/11/ext/string_conversions.h:
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-struct.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/c++/11/backward/binders.h:
+
+/usr/include/c++/11/iostream:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/11/cctype:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/11/thread:
+
+/usr/include/stdio.h:
+
+/usr/include/c++/11/ios:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/11/string:
+
+/usr/include/unctrl.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/c++/11/exception:
 
@@ -1331,23 +1336,101 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
+/usr/include/c++/11/cstdlib:
+
+/usr/include/c++/11/bits/stl_iterator_base_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/ncurses_dll.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+../src/timer/timer.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+../Cli-Kit/cli_kit.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/usr/include/c++/11/bits/memoryfwd.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/c++/11/bits/move.h:
+
 /usr/include/c++/11/tuple:
 
 /usr/include/c++/11/type_traits:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+/usr/include/c++/11/bits/char_traits.h:
 
-/usr/include/c++/11/string:
+../Cli-Kit/include/menu.h:
 
-/usr/include/c++/11/bits/cxxabi_init_exception.h:
+/usr/include/c++/11/bits/allocator.h:
 
-/usr/include/wchar.h:
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+/usr/include/c++/11/cwchar:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
+
+/usr/include/c++/11/bits/stl_algobase.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/include/c++/11/streambuf:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/c++/11/bits/functexcept.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h:
+
+/usr/include/c++/11/ext/type_traits.h:
+
+../src/timer/time.cpp:
+
+/usr/include/c++/11/bits/stl_function.h:
+
+/usr/include/c++/11/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+/usr/include/ctype.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/c++/11/debug/assertions.h:
+
+/usr/include/c++/11/new:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/c++/11/bits/ostream.tcc:
+
+/usr/include/c++/11/clocale:
 
 /usr/include/c++/11/debug/debug.h:
 
@@ -1361,26 +1444,6 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/c++/11/bits/move.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
-/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/11/cctype:
-
-/usr/include/unistd.h:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
@@ -1389,9 +1452,13 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/c++/11/bits/basic_string.h:
 
-/usr/include/c++/11/bits/ios_base.h:
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/curses.h:
 
@@ -1411,12 +1478,6 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-../src/timer/timer.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
@@ -1426,12 +1487,6 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/c++/11/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/11/cstdlib:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
@@ -1445,24 +1500,6 @@ CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o: ../src/timer/timer.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/usr/include/c++/11/iostream:
-
-/usr/include/c++/11/backward/binders.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/c++/11/bits/basic_string.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
 /usr/include/c++/11/ext/alloc_traits.h:
 
-/usr/include/c++/11/bits/alloc_traits.h:
-
-/usr/include/c++/11/bits/this_thread_sleep.h:
-
-/usr/include/c++/11/bits/stl_construct.h:
+/usr/include/c++/11/bits/cxxabi_forced.h:

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -15,6 +16,7 @@ public:
     string to_string();
 
     static int timeToSeconds(Time time);
+    static vector<int> timeToDigits(Time time);
     static Time secondsToTime(int seconds);   
-    static Time guiTimeInput();
+    static Time guiTimeInput(vector<int> digits = {0,0,0,0,0,0});
 };
