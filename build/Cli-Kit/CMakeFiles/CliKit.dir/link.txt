@@ -1,2 +1,0 @@
-/usr/bin/ar qc libCliKit.a CMakeFiles/CliKit.dir/src/text/text.cpp.o CMakeFiles/CliKit.dir/src/menu/menu.cpp.o CMakeFiles/CliKit.dir/src/menu/menu_utils.cpp.o CMakeFiles/CliKit.dir/src/animations/animations.cpp.o
-/usr/bin/ranlib libCliKit.a

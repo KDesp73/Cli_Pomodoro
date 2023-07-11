@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/CliPomodoro.dir/src/main.cpp.o CMakeFiles/CliPomodoro.dir/src/timer/timer.cpp.o CMakeFiles/CliPomodoro.dir/src/timer/time.cpp.o CMakeFiles/CliPomodoro.dir/src/menu/menu.cpp.o CMakeFiles/CliPomodoro.dir/src/pomodoro/pomodoro.cpp.o -o CliPomodoro  Cli-Kit/libCliKit.a 
