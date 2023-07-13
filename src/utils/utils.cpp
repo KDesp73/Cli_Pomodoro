@@ -54,7 +54,7 @@ std::string Utils::removeSubstring(string original, string substring) {
 
 string Utils::getTask(){
     string task;
-    cout << Text::red << "Task: " << Text::normal;
+    cout << endl << "  " << Text::red << "Task: " << Text::normal;
     getline(cin, task);
 
     return task;

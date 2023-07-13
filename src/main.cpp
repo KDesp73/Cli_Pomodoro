@@ -59,7 +59,7 @@ void MenuOptions::selectIntervalOptions(int option){
         case 2:
             PomodoroMenu::settingsMenu();
             break;
-    }
+    } 
     PomodoroMenu::settingsMenu();
 }
 
@@ -69,19 +69,22 @@ void Pomodoro::start(){
     int delay = 1;
     delay *= CLOCKS_PER_SEC;
 
+    string side_space = "  ";
     string sound_path = Utils::getProjectPath() + "/assets/alert.ogg";
     sound_path = Utils::removeSubstring(sound_path, "/build");
     bool end = false;
 
+    Text::hideCursor();
     Text::clearScreen();
     while(!end){
         while(this->timer.time_passed <= this->work_interval){
             Time t = Time::secondsToTime(timer.time_passed);
 
             // Rendering
-            cout << Text::red << "Task: " << Text::normal  << task << endl;
-            cout << t.to_string() << endl;
-            Animations::loadingBar(timer.time_passed, this->work_interval);
+            cout << endl << side_space << Text::red << "Task: " << Text::normal  << task << endl;
+            cout << side_space << t.to_string() << endl;
+            cout << side_space;
+            Animations::loadingBar(timer.time_passed, this->work_interval, 40);
 
             // Refresh
             this_thread::sleep_for(chrono::seconds(1));
@@ -90,7 +93,7 @@ void Pomodoro::start(){
         }   
         if(break_interval != 0){
             Sound::playSound(sound_path);
-            cout << "Break Time. Press " + Text::u_blue +"Enter" + Text::normal +  " to start your break";
+            cout << endl << side_space << "Break Time. Press " + Text::u_blue +"Enter" + Text::normal +  " to start your break";
             cin.get();
             
             Text::clearScreen();
@@ -100,9 +103,10 @@ void Pomodoro::start(){
                 Time t = Time::secondsToTime(break_seconds);
                 
                 // Rendering
-                cout << Text::red << "Break Time!" << Text::normal << endl; 
-                cout << t.to_string() << endl;
-                Animations::loadingBar(break_seconds, this->break_interval);
+                cout << endl << side_space << Text::red << "Break Time!" << Text::normal << endl; 
+                cout << side_space << t.to_string() << endl;
+                cout << side_space;
+                Animations::loadingBar(break_seconds, this->break_interval, 40);
 
                 // Refresh
                 this_thread::sleep_for(chrono::seconds(1));
@@ -110,7 +114,7 @@ void Pomodoro::start(){
                 Text::clearScreen();
             }
             Sound::playSound(sound_path);
-            cout << "Break is over. Press " + Text::u_blue + "Enter" + Text::normal + " to continue with your task";
+            cout << endl << side_space << "Break is over. Press " + Text::u_blue + "Enter" + Text::normal + " to continue with your task";
             cin.get();
 
             Text::clearScreen();
@@ -131,6 +135,8 @@ int main(int argc, char **argv){
     Pomodoro p{Utils::getTask(), work_interval, break_interval};
     
     p.start();
+
+    Text::showCursor();
 
     return 0;
 }
