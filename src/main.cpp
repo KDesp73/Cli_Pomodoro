@@ -158,7 +158,6 @@ void Pomodoro::start(){
         if(break_interval != 0){
             string sound_path = getProjectPath() + "/assets/alert.ogg";
             sound_path = removeSubstring(sound_path, "/build");
-            cout << "Sound path: " << sound_path << endl;
             Sound::playSound(sound_path);
             cout << "Break Time. Press " + Text::u_blue +"Enter" + Text::normal +  " to start your break";
             cin.get();
