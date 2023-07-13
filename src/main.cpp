@@ -122,8 +122,8 @@ void Pomodoro::start(){
 
 
 int main(int argc, char **argv){
-    work_interval = {0, 0, 10};
-    break_interval = {0, 0, 5};
+    work_interval = {0, 25, 0};
+    break_interval = {0, 5, 0};
     
     PomodoroMenu::homeMenu();
 
