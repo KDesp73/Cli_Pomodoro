@@ -8,6 +8,7 @@
 
 #ifdef _WIN32
     #include <conio.h>
+    #include <Windows.h>
 #else
     #include <termios.h>
     #include <unistd.h>
@@ -26,6 +27,41 @@ using namespace std;
 Time work_interval;
 Time break_interval;
 std::atomic<bool> stopFlag(false);
+
+std::string getExecutablePath() {
+    char buffer[1024];
+    std::string path;
+#ifdef _WIN32
+    GetModuleFileName(NULL, buffer, sizeof(buffer));
+    path = buffer;
+#else
+    ssize_t len = readlink("/proc/self/exe", buffer, sizeof(buffer) - 1);
+    if (len != -1) {
+        buffer[len] = '\0';
+        path = buffer;
+    }
+#endif
+    return path;
+}
+
+std::string getProjectPath() {
+    std::string executablePath = getExecutablePath();
+    std::size_t found = executablePath.find_last_of("/\\");
+    if (found != std::string::npos) {
+        return executablePath.substr(0, found);
+    }
+    return "";
+}
+
+std::string removeSubstring(const std::string& original, const std::string& substring) {
+    std::string result = original;
+    std::size_t found = result.find(substring);
+    while (found != std::string::npos) {
+        result.erase(found, substring.length());
+        found = result.find(substring, found);
+    }
+    return result;
+}
 
 void thread_task(Timer& timer){
     while(!stopFlag)
@@ -120,7 +156,11 @@ void Pomodoro::start(){
             Text::clearScreen();
         }   
         if(break_interval != 0){
-            cout << "\aBreak Time. Press " + Text::u_blue +"Enter" + Text::normal +  " to start your break";
+            string sound_path = getProjectPath() + "/assets/alert.ogg";
+            sound_path = removeSubstring(sound_path, "/build");
+            cout << "Sound path: " << sound_path << endl;
+            Sound::playSound(sound_path);
+            cout << "Break Time. Press " + Text::u_blue +"Enter" + Text::normal +  " to start your break";
             cin.get();
             
             Text::clearScreen();
@@ -141,8 +181,8 @@ void Pomodoro::start(){
 
                 Text::clearScreen();
             }
-            
-            cout << "\aBreak is over. Press " + Text::u_blue + "Enter" + Text::normal + " to continue with your task";
+            Sound::playSound(sound_path);
+            cout << "Break is over. Press " + Text::u_blue + "Enter" + Text::normal + " to continue with your task";
             cin.get();
 
             Text::clearScreen();
