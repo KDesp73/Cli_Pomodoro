@@ -30,9 +30,12 @@ Time break_interval;
 
 
 void MenuOptions::homeOptions(int option){
+    Pomodoro p;
     switch(option){
         case 0:
-            return;            
+            p = {Utils::getTask(), work_interval, break_interval};
+            p.start();
+            Text::showCursor();           
             break;
         case 1:
             PomodoroMenu::settingsMenu();
@@ -60,7 +63,7 @@ void MenuOptions::selectIntervalOptions(int option){
             PomodoroMenu::settingsMenu();
             break;
     } 
-    PomodoroMenu::settingsMenu();
+    PomodoroMenu::selectIntervalMenu();
 }
 
 
@@ -129,14 +132,7 @@ int main(int argc, char **argv){
     work_interval = {0, 25, 0};
     break_interval = {0, 5, 0};
     
-    PomodoroMenu::homeMenu();
-
-
-    Pomodoro p{Utils::getTask(), work_interval, break_interval};
-    
-    p.start();
-
-    Text::showCursor();
+    PomodoroMenu::homeMenu();    
 
     return 0;
 }

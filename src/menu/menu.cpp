@@ -22,15 +22,15 @@ void MenuOptions::settingsOptions(int option){
 
 void PomodoroMenu::homeMenu(){
     vector <string> options = {"Start", "Settings", "Exit"};
-    CliKit::Menu::menu("Cli Pomodoro", 4, options, &MenuOptions::homeOptions);
+    CliKit::Menu::menu(Text::bold + "Cli Pomodoro" + Text::normal, 4, options, &MenuOptions::homeOptions);
 }
 
 void PomodoroMenu::settingsMenu(){
     vector <string> options = {"Set intervals", "Return"};
-    CliKit::Menu::menu("Settings", 4, options, &MenuOptions::settingsOptions);
+    CliKit::Menu::menu(Text::bold + "Settings" + Text::normal, 4, options, &MenuOptions::settingsOptions);
 }
 
 void PomodoroMenu::selectIntervalMenu(){
     vector<string> options = {"Work", "Break", "Return"};
-    CliKit::Menu::menu("Set Intervals", 4, options, &MenuOptions::selectIntervalOptions);
+    CliKit::Menu::menu(Text::bold + "Set Intervals" + Text::normal, 4, options, &MenuOptions::selectIntervalOptions);
 }
