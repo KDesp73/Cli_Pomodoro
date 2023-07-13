@@ -134,7 +134,10 @@ Time Time::guiTimeInput(vector<int> digits){
     
         switch(handleArrowKeys()){
             case Keys::UP:
-                if(digits.at(selected) < 9)
+                if(selected == 2 || selected == 4){
+                    if(digits.at(selected) < 5)
+                        digits.at(selected)++;
+                } else if(digits.at(selected) < 9)
                     digits.at(selected)++;
                 break;
             case Keys::DOWN:
