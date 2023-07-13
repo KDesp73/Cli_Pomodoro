@@ -19,7 +19,7 @@ The Pomodoro Technique is a time management method based on 25-minute stretches 
 
 ## Latest Release
 
-[Here](https://github.com/KDesp73/Cli-Pomodoro/releases/tag/v1.0.0)
+[Here](https://github.com/KDesp73/Cli-Pomodoro/releases/latest)
 
 ## Contributing
 
