@@ -17,6 +17,7 @@ set(SOURCES
     src/menu/menu.cpp
 
     src/pomodoro/pomodoro.cpp
+    src/utils/utils.cpp
 )
 
 # Add your header files
@@ -25,6 +26,7 @@ set(HEADERS
     include/my_time.h
     include/menu.h
     include/pomodoro.h
+    include/utils.h
 )
 
 set(TESTS
