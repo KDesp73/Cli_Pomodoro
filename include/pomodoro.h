@@ -22,7 +22,8 @@ public:
         
         this->timer = {work_interval};
     }
-
+    Pomodoro(string task, Time work_interval = {0, 25, 0}, Time break_interval = {0, 5, 0}) 
+        : Pomodoro(task, Time::timeToSeconds(work_interval), Time::timeToSeconds(break_interval)){}
     void start();
     void reset();
 };
