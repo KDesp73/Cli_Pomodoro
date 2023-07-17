@@ -32,7 +32,7 @@ void Pomodoro::start(){
             cout << endl << side_space << Text::red << "Task: " << Text::normal  << task << endl;
             cout << side_space << t.to_string() << endl;
             cout << side_space;
-            Animations::loadingBar(timer.time_passed, this->work_interval, 40);
+            Animations::loadingBar(timer.time_passed, this->work_interval, 30);
 
             // Refresh
             clock_t start_time = clock();
@@ -55,7 +55,7 @@ void Pomodoro::start(){
                 cout << endl << side_space << Text::red << "Break Time!" << Text::normal << endl; 
                 cout << side_space << t.to_string() << endl;
                 cout << side_space;
-                Animations::loadingBar(break_seconds, this->break_interval, 40);
+                Animations::loadingBar(break_seconds, this->break_interval, 30);
 
                 // Refresh
                 clock_t start_time = clock();

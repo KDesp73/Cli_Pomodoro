@@ -71,7 +71,7 @@ int main(int argc, char **argv){
     work_interval = {0, 25, 0};
     break_interval = {0, 5, 0};
     
-    PomodoroMenu::homeMenu();    
+PomodoroMenu::homeMenu();    
 
     return 0;
 }
