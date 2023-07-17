@@ -17,6 +17,8 @@ void Pomodoro::start(){
     int delay = 1;
     delay *= CLOCKS_PER_SEC;
 
+    int loading_bar_length = 25;
+
     string side_space = "  ";
     string sound_path = Utils::getProjectPath() + "/assets/alert.ogg";
     sound_path = Utils::removeSubstring(sound_path, "/build");
@@ -32,7 +34,7 @@ void Pomodoro::start(){
             cout << endl << side_space << Text::red << "Task: " << Text::normal  << task << endl;
             cout << side_space << t.to_string() << endl;
             cout << side_space;
-            Animations::loadingBar(timer.time_passed, this->work_interval, 30);
+            Animations::loadingBar(timer.time_passed, this->work_interval, loading_bar_length);
 
             // Refresh
             clock_t start_time = clock();
@@ -55,7 +57,7 @@ void Pomodoro::start(){
                 cout << endl << side_space << Text::red << "Break Time!" << Text::normal << endl; 
                 cout << side_space << t.to_string() << endl;
                 cout << side_space;
-                Animations::loadingBar(break_seconds, this->break_interval, 30);
+                Animations::loadingBar(break_seconds, this->break_interval, loading_bar_length);
 
                 // Refresh
                 clock_t start_time = clock();
