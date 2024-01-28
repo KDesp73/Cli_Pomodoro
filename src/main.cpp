@@ -6,6 +6,7 @@
 #include <string>
 #include <thread>
 #include <vector>
+#include <signal.h>
 
 #ifdef _WIN32
 #include <Windows.h>
@@ -66,10 +67,19 @@ void MenuOptions::selectIntervalOptions(int option) {
     PomodoroMenu::selectIntervalMenu();
 }
 
+void siginthandler(int args){
+    Text::clearScreen();
+    Text::enableInputBuffering();
+    Text::showCursor();
+    exit(0);
+}
+
 int main(int argc, char **argv) {
     work_interval = {0, 25, 0};
     break_interval = {0, 5, 0};
 
+
+	signal(SIGINT, siginthandler);
     PomodoroMenu::homeMenu();
 
     return 0;

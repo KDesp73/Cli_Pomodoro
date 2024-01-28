@@ -1,6 +1,7 @@
 #include "pomodoro.h"
 #include "cli_kit.h"
 #include "utils.h"
+#include <limits>
 
 #include <iostream>
 #include <ctime>
@@ -44,6 +45,10 @@ void Pomodoro::start(){
         }   
         if(break_interval != 0){
             Sound::playSound(sound_path);
+
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
             cout << endl << side_space << "Break Time. Press " + Text::u_blue +"Enter" + Text::normal +  " to start your break";
             cin.get();
             
@@ -66,6 +71,10 @@ void Pomodoro::start(){
                 Text::clearScreen();
             }
             Sound::playSound(sound_path);
+
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
             cout << endl << side_space << "Break is over. Press " + Text::u_blue + "Enter" + Text::normal + " to continue with your task";
             cin.get();
 

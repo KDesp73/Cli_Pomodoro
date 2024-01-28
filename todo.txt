@@ -1,0 +1,1 @@
+TODO: fluch buffer input before asking for key press
