@@ -16,6 +16,8 @@ if [ -n "$executable_path" ]; then
         echo "Error: Failed to copy the executable to /usr/bin/."
     fi
 else
+    git submodule init
+    git submodule update
 	./scripts/build
 	if [ $? -eq 0 ]; then
         ./install.sh
